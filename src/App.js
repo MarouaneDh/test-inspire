@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Banner from './Banner/Banner';
+import Footer from './Footer/Footer';
+import Navbar from './Navbar/Navbar';
+import Opinions from './Opinions/Opinions';
+import Trial from './Trial/Trial';
 
 function App() {
+  const [generalLang, setGeneralLang] = useState("FR")
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar setGeneralLang={setGeneralLang} />
+      <Banner generalLang={generalLang} />
+      <Trial generalLang={generalLang} />
+      <Opinions generalLang={generalLang} />
+      <Footer generalLang={generalLang} />
     </div>
   );
 }

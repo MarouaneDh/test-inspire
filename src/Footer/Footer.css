@@ -1,0 +1,68 @@
+.footer{
+    background-color: #123653;
+    color: white;
+    display: flex;
+    padding: 80px 9% 80px 9%;
+    flex-wrap: wrap;
+}
+
+#logo{
+    margin-bottom: 80px;
+    width: 300px;
+}
+
+#in, #twitter, #fb, #youtube{
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 50%;
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    margin-bottom:30px;
+}
+
+#in:hover{
+    background-color: #1c507a;
+}
+
+#twitter:hover{
+    background-color: #1f71b4;
+}
+
+#fb:hover{
+    background-color: #1c507a;
+}
+
+#youtube:hover{
+    background-color: #df0b0b;
+}
+
+.blocs{
+    display: flex;
+    margin-left: 50px;
+    flex-wrap: wrap;
+}
+
+.bloc{
+    display: flex;
+    flex-direction: column;
+    width: 205px;
+    margin: 0 0 0 35px;
+}
+
+.inBloc span{
+    margin-bottom: 25px;
+    font-size: 14px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.title{
+    font-weight: 700;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.inBloc{
+    display: flex;
+    flex-direction: column;
+}
